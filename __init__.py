@@ -1,6 +1,21 @@
-from ._version import get_versions
-from .lib import Bunch, TileProvider  # noqa
-from .providers import providers  # noqa
+from ._url import (
+    URL,
+    Query,
+    QueryVariable,
+    SimpleQuery,
+    cache_clear,
+    cache_configure,
+    cache_info,
+)
 
-__version__ = get_versions()["version"]
-del get_versions
+__version__ = "1.11.0"
+
+__all__ = (
+    "URL",
+    "SimpleQuery",
+    "QueryVariable",
+    "Query",
+    "cache_clear",
+    "cache_configure",
+    "cache_info",
+)
